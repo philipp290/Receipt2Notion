@@ -69,7 +69,7 @@ The workflow follows an event-driven pipeline:
 5. Results are stored in Notion databases
 6. User receives confirmation or error feedback
 
-/*  Users can also request usage instructions via /help.
+\*  Users can also request usage instructions via /help.
 
 ## Key Implementation Details
 - n8n credentials used for secrets

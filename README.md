@@ -1,5 +1,9 @@
 # Receipt2Notion
 
+![Built with n8n](https://img.shields.io/badge/built%20with-n8n-orange)
+![API OpenAI](https://img.shields.io/badge/API-OpenAI-blue)
+![Automation](https://img.shields.io/badge/type-automation-green)
+
 ## Problem
 Manual tracking of daily expenses is inconvenient, time-consuming, and error-prone. The goal was to reduce the effort to a single step: taking a photo of a receipt.
 

@@ -12,6 +12,43 @@ Built an n8n workflow that:
 - stores results in multiple Notion databases (global + category-specific)
 - provides user feedback and error handling via Telegram messages
 
+## Example
+
+### Input (Telegram)
+
+![Receipt2Notion n8n Workflow](docs/telegram-example-input.png)
+
+The Telegram bot interface ("R.O.B." – Receipt Organization Bot) acts as the user-facing entry point.
+
+### Processing (OpenAI)
+
+The AI extracts a structured JSON array from the receipt image:
+
+```json
+[
+  {
+    "name": "Strandoase - Cola 0.3",
+    "price": 3.5,
+    "date": "2026-05-01",
+    "category": "Leisure"
+  },
+  {
+    "name": "Strandoase - Pot Kaffee",
+    "price": 3.9,
+    "date": "2026-05-01",
+    "category": "Leisure"
+  }
+]
+```
+
+### Output (Notion)
+
+![Receipt2Notion n8n Workflow](docs/notion-example-output.png)
+
+The extracted data is saved to two Notion databases:
+- a global expense database
+- a category-specific database
+
 ## Tech Stack
 - n8n
 - Telegram Bot API

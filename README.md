@@ -13,7 +13,7 @@ Built an n8n workflow that:
 - authenticates users via Telegram ID
 - extracts structured data (title, price, date, category) using the OpenAI API
 - applies rule-based categorization
-- stores results in multiple Notion databases (global + category-specific)
+- stores results in both a global and category-specific Notion database
 - provides user feedback and error handling via Telegram messages
 
 ## Example
@@ -54,10 +54,10 @@ The extracted data is saved to two Notion databases:
 - a category-specific database
 
 ## Tech Stack
-- n8n
+- n8n (hosted as a managed service on Hostinger)
 - Telegram Bot API
 - Notion API
-- OpenAI API
+- OpenAI API (GPT-4.1-mini)
 - JavaScript (Code nodes)
 
 ## Architecture Overview
@@ -75,15 +75,16 @@ The workflow follows an event-driven pipeline:
 
 \*  Users can also request usage instructions via /help.
 
-## Key Implementation Details
-- n8n credentials used for secrets
-- Image analysis via the GPT-4.1-mini model
-- Rule-based categorization into five categories: Groceries, Personal Care, Leisure, Car, and Other
-- User authentication via Telegram ID
+## Design Decisions
+- Used Telegram as the interface for low-friction, mobile-first input
+- Chose AI-based extraction over predefined templates to handle unstructured receipt data
+- Combined AI extraction with rule-based categorization for reliability
+- Used Notion as a lightweight, user-friendly data store
 
 ## Security
-The production workflow JSON is not included because n8n exports may contain credential metadata or sensitive headers. Architecture documentation is provided instead.
+The production workflow JSON is not included to avoid exposing credential metadata, API configuration, or sensitive headers. Access is restricted via Telegram ID authentication.
 
-## Outcome
-- Reduced manual expense tracking to a single user action
-- Automated data extraction and categorization
+## Practical Value
+- Reduces manual expense tracking to a single step (taking a photo)
+- Minimizes errors compared to manual entry
+- Creates structured data for further analysis (e.g. spending insights)

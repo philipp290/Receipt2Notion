@@ -33,23 +33,10 @@ Each detected item must use this format:
 ## Categories
 These are the 5 categories into which you should classify the transactions.
 
-1.) Groceries
-All expenses related to food and nutrition, excluding restaurant visits.
-Typical item names include: tomatoes, rice, salami, ...
-Typical issuers/stores include: Lidl, Edeka, Aldi, ...
-
-2.) Personal Care
-Everything related to personal care, including hairdresser visits.
-Typical item names include: deodorant, shower gel, razors, ...
-Typical issuers/stores include: DM, Rossmann, Müller, ...
-
-3.) Car
-All expenses related to my car.
-Typical item names include: fuel, tire change, parking, ...
-
-4.) Leisure
-All expenses related to leisure activities.
-Typical item names include: amusement park, restaurant, video games, ...
-
-5.) Other
-Use this category only if an item cannot be assigned to any other category.
+| Category | Description | Typical items | Typical issuers / stores |
+|---|---|---|---|
+| Groceries | Food and nutrition expenses, excluding restaurant visits | tomatoes, rice, salami | Lidl, Edeka, Aldi |
+| Personal Care | Personal care expenses, including hairdresser visits | deodorant, shower gel, razors | DM, Rossmann, Müller |
+| Car | Car-related expenses | fuel, tire change, parking | gas stations, parking providers |
+| Leisure | Leisure-related expenses | amusement parks, restaurants, video games | cinemas, restaurants, entertainment providers |
+| Other | Fallback category if no other category applies | unclear or mixed items | unknown or uncategorized issuers |

@@ -39,4 +39,4 @@ These are the 5 categories into which you should classify the transactions.
 | Personal Care | Personal care expenses, including hairdresser visits | deodorant, shower gel, razors | DM, Rossmann, Müller |
 | Car | Car-related expenses | fuel, tire change, parking | gas stations, parking providers |
 | Leisure | Leisure-related expenses | amusement parks, restaurants, video games | cinemas, restaurants, entertainment providers |
-| Other | Fallback category if no other category applies | unclear or mixed items | unknown or uncategorized issuers |
+| Other | Fallback category if no other category applies | - | - |
